@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新派咏春拳 | 传统南派武术</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Microsoft Yahei",sans-serif;
+        }
+        body{
+            background:#f8f5f0;
+            color:#333;
+            line-height:1.8;
+        }
+        /* 头部横幅 */
+        header{
+            background:#8c1c13;
+            color:#fff;
+            text-align:center;
+            padding:40px 20px;
+        }
+        header h1{
+            font-size:42px;
+            letter-spacing:6px;
+            margin-bottom:10px;
+        }
+        header p{
+            font-size:18px;
+            opacity:0.9;
+        }
+        /* 导航栏 */
+        nav{
+            background:#222;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            padding:16px 28px;
+            font-size:16px;
+            transition:0.3s;
+        }
+        nav a:hover{
+            background:#8c1c13;
+        }
+        /* 容器通用 */
+        .container{
+            max-width:1200px;
+            margin:0 auto;
+            padding:50px 20px;
+        }
+        .section-title{
+            text-align:center;
+            font-size:30px;
+            color:#8c1c13;
+            margin-bottom:35px;
+            padding-bottom:12px;
+            border-bottom:2px solid #ddd;
+        }
+        /* 简介区块 */
+        .intro-box{
+            display:flex;
+            gap:40px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+        .intro-text{
+            flex:1;
+            min-width:300px;
+            font-size:17px;
+        }
+        /* 拳理招式 */
+        .grid-box{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+            margin-top:20px;
+        }
+        .card{
+            background:#fff;
+            padding:25px;
+            border-radius:8px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.08);
+        }
+        .card h3{
+            color:#8c1c13;
+            margin-bottom:12px;
+            font-size:20px;
+        }
+        /* 宗师介绍 */
+        .master-list{
+            margin-top:20px;
+        }
+        .master-item{
+            background:#fff;
+            padding:22px;
+            margin-bottom:20px;
+            border-left:5px solid #8c1c13;
+        }
+        .master-item h3{
+            margin-bottom:8px;
+            color:#222;
+        }
+        /* 练功照片相册 */
+        .photo-grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap:20px;
+        }
+        .photo-item{
+            background:#fff;
+            padding:10px;
+            border-radius:6px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+        .photo-item img{
+            width:100%;
+            height:auto;
+            display:block;
+            border-radius:4px;
+        }
+        .photo-item p{
+            text-align:center;
+            margin-top:10px;
+            color:#555;
+        }
+        /* 底部样式 */
+        footer{
+            background:#222;
+            color:#aaa;
+            text-align:center;
+            padding:40px 20px;
+            margin-top:30px;
+        }
+        .contact-info{
+            margin:20px 0;
+            line-height:2;
+        }
+        .social-links a{
+            color:#fff;
+            margin:0 12px;
+            font-size:17px;
+            text-decoration:none;
+        }
+        .social-links a:hover{
+            color:#8c1c13;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部 -->
+    <header>
+        <h1>新派咏春拳</h1>
+        <p>内敛沉稳 近身短打 守中用中</p>
+    </header>
+
+    <!-- 导航 -->
+    <nav>
+        <a href="#intro">拳术简介</a>
+        <a href="#photo">练功实拍</a>
+        <a href="#principle">核心拳理</a>
+        <a href="#form">三套基础拳</a>
+        <a href="#master">代表宗师</a>
+        <a href="#value">文化价值</a>
+    </nav>
+
+    <div class="container">
+        <!-- 简介 -->
+        <section id="intro">
+            <h2 class="section-title">新派咏春拳简介</h2>
+            <div class="intro-box">
+                <div class="intro-text">
+                    <p>新派咏春拳是改良创新后的南派武术体系，保留传统咏春短桥窄马、贴身近战核心精髓，同时优化训练体系，更适合现代人群练习，招式精简实用，攻防一体。</p>
+                    <br>
+                    <p>传统咏春相传由五枚师太所创，后传严咏春，近代经叶问宗师发扬光大；新派咏春在古法基础上简化冗余动作、强化实战效率，不分年龄体型，零基础也能快速上手。</p>
+                    <br>
+                    <p>依托系统教学模式，兼顾防身健体与修身养性，如今在海内外广泛传播。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 练功照片区域（你放自己照片的地方） -->
+        <section id="photo" style="margin-top:60px;">
+            <h2 class="section-title">本人练功实拍</h2>
+            <div class="photo-grid">
+                <!-- 第一张照片 -->
+                <div class="photo-item">
+                    <img src="pic1.jpg" alt="咏春练功">
+                    <p>小念头练习</p>
+                </div>
+                <!-- 第二张照片 -->
+                <div class="photo-item">
+                    <img src="pic2.jpg" alt="木人桩练习">
+                    <p>木人桩训练</p>
+                </div>
+                <!-- 第三张照片 -->
+                <div class="photo-item">
+                    <img src="pic3.jpg" alt="黏手对练">
+                    <p>黏手对练</p>
+                </div>
+                <!-- 想多加照片直接复制上面一整段 div 即可 -->
+            </div>
+        </section>
+
+        <!-- 核心拳理 -->
+        <section id="principle" style="margin-top:60px;">
+            <h2 class="section-title">新派咏春核心拳理</h2>
+            <div class="grid-box">
+                <div class="card">
+                    <h3>守中用中</h3>
+                    <p>人体中线是攻防核心，双手始终护住中线，进攻也沿中线直线出击，路线最短、发力最快。</p>
+                </div>
+                <div class="card">
+                    <h3>短桥窄马</h3>
+                    <p>马步不分开过大，手臂短距离发力，近身黏手化解对方力量，不与对手硬拼蛮力。</p>
+                </div>
+                <div class="card">
+                    <h3>力从地起</h3>
+                    <p>力量根基在脚下，腰马合一，整体传导劲力，而非单纯手臂发力。</p>
+                </div>
+                <div class="card">
+                    <h3>黏手听劲</h3>
+                    <p>通过手臂接触感知对手力度方向，顺势化劲反击，以巧取胜。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 三套基础拳 -->
+        <section id="form" style="margin-top:60px;">
+            <h2 class="section-title">三套基础套路</h2>
+            <div class="grid-box">
+                <div class="card">
+                    <h3>小念头</h3>
+                    <p>咏春入门根基，重在修正身形、练习摊膀伏基础手法，静中求力，培育基本功。</p>
+                </div>
+                <div class="card">
+                    <h3>寻桥</h3>
+                    <p>移动马步，学习进退转马，练习移动中保持中线，化解侧面来力。</p>
+                </div>
+                <div class="card">
+                    <h3>标指</h3>
+                    <p>三套拳最高阶，侧重强攻、卸力、倒地攻防，危急关头的制敌技法。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 代表宗师 -->
+        <section id="master" style="margin-top:60px;">
+            <h2 class="section-title">咏春代表宗师</h2>
+            <div class="master-list">
+                <div class="master-item">
+                    <h3>严咏春 — 创始人</h3>
+                    <p>传说五枚师太弟子，结合女性身形特点创编柔和巧劲拳法，后世以其名字命名咏春拳。</p>
+                </div>
+                <div class="master-item">
+                    <h3>叶问 — 近代传播宗师</h3>
+                    <p>民国时期定居香港，广收弟子，系统化整理咏春教学体系，让咏春大规模普及。</p>
+                </div>
+                <div class="master-item">
+                    <h3>李小龙 — 世界推广者</h3>
+                    <p>叶问弟子，融合咏春理念创立截拳道，通过影视将咏春拳推向全球视野。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文化价值 -->
+        <section id="value" style="margin-top:60px;">
+            <h2 class="section-title">新派咏春文化价值</h2>
+            <div class="intro-text">
+                <p>1. 修身养性：咏春讲究静心沉稳，戒骄戒躁，练习过程磨炼心性，提升专注力。</p>
+                <p>2. 实用防身：招式简洁高效，零基础也能快速掌握基础自卫技巧。</p>
+                <p>3. 非遗文化：咏春拳列入多地非物质文化遗产，是岭南武术文化重要载体。</p>
+                <p>4. 健体养生：低冲击运动，锻炼肩颈、腰腹、平衡，老少皆宜。</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚（可修改地址、社交账号区域） -->
+    <footer>
+        <h3 style="color:#fff;margin-bottom:15px;">武馆联系方式</h3>
+        <div class="contact-info">
+            <p>武馆地址：北京市海淀区知春路</p>
+            <p>咨询电话：13581993239</p>
+            <p>微信咨询：13581993239</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+
+        <p style="margin-top:25px;color:#777;">新派咏春拳武馆官方页面 | 守中、静心、修身、自强</p>
+    </footer>
+</body>
+</html>
